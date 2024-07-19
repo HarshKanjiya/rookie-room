@@ -1,0 +1,8 @@
+@for (item of data(); track $index) {
+<div @anim class="fixed top-0 min-w-40 p-4 flex items-center justify-start gap-3 rounded-md">
+    <div class="h-full w-2"></div>
+    <div class="h-full w-full">
+        {{item.message}}
+    </div>
+</div>
+}

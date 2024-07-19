@@ -1,0 +1,6 @@
+<div class="h-screen w-full flex items-center justify-center content-[' '] bg-black/70"
+    (click)="$event.stopPropagation(); closeModal()">
+    <div class="bg-white dark:bg-black rounded-xl p-4">
+        <ng-content></ng-content>
+    </div>
+</div>

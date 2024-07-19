@@ -1,12 +1,3 @@
-export interface IUser {
-    email?: string
-    phone?: string
-    name: string
-    userName: string
-    gender?: string
-    avatarUrl?: string
-}
-
 export interface LoginDTO {
     email: string
     password: string
@@ -38,4 +29,15 @@ export class PageObject implements IPageObject {
     public currentPage?: number;
     public totalCount?: number;
     public maxSize?: number;
+}
+
+export interface IHttpResponse {
+    success: boolean
+    data: any
+    error?: string
+}
+
+export interface ISort {
+    field: string
+    dir: string
 }

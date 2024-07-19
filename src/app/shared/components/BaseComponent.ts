@@ -1,5 +1,5 @@
 import { signal, Signal } from "@angular/core"
-import { PageObject } from "../interfaces/common"
+import { ISort, PageObject } from "../interfaces/common.interface"
 
 interface IBaseComponent {
     addFilter: () => void
@@ -13,4 +13,5 @@ export class BaseComponent {
     result: Signal<boolean> = signal(false)
     isLoading: Signal<boolean> = signal(false)
     pageObject = new PageObject()
+    sort: Signal<ISort | null> = signal(null)
 }
